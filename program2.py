@@ -6,15 +6,17 @@
 #           A01753176 Gilberto André García Gaytán
 # ----------------------------------------------------------
 
+# It imports the regular expression module.
 import re
 
 
 def cuenta_lineas(archivo):
     """
-    It counts the number of lines of code in a Python file, ignoring comments
-    and blank lines :param nombre_archivo: The name of the file to
-    count lines of code in:return: The number of lines of code in the file.
-    """
+    It counts the number of lines in a Python file, and also counts the number
+    of lines in each of the following categories: functions, classes,
+    procedures,and other:param archivo: The file to be read
+    :return: The number of lines in the file.
+ p   """
     lineas = 0
     tamaños = {"Funciones": 0, "Clases": 0, "Procedimientos": 0, "Otros": 0}
     with open(archivo, 'r') as archivo:
