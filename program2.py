@@ -16,7 +16,7 @@ def cuenta_lineas(archivo):
     of lines in each of the following categories: functions, classes,
     procedures,and other:param archivo: The file to be read
     :return: The number of lines in the file.
- p   """
+   """
     lineas = 0
     tamaños = {"Funciones": 0, "Clases": 0, "Procedimientos": 0, "Otros": 0}
     with open(archivo, 'r') as archivo:
